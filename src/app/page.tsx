@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import LeadForm from './LeadForm'
 
 export default function Home() {
@@ -24,6 +25,10 @@ export default function Home() {
           <LeadForm />
         </div>
       </div>
+
+      <Link href="/admin" className="mt-12 text-gray-800 hover:text-gray-700 text-xs transition-colors">
+        관리자
+      </Link>
     </main>
   )
 }
